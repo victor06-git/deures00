@@ -19,17 +19,25 @@ public class Exercici0004 {
     }
 
     public static String validaContrasenya(String contrasenya) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        
+        Integer length = contrasenya.length();
+        
+       
+        if (length < 8){
+            System.out.println("La contrasenya és vàlida");
+        } else {
+            System.out.println("La contrasenya NO és vàlida");
+        }
+
         return "";
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        /*
-            TODO: Resol aquí l'exercici
-        */
+        
+        System.out.print("Escriu una contrasenya: ");
+        String contrasenya = scanner.nextLine();
+
         scanner.close();
     }
 }

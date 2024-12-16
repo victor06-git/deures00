@@ -20,7 +20,7 @@ public class Exercici0003 {
         System.out.print("Introdueix l'IVA (%): ");
         double iva = scanner.nextDouble();
 
-        System.out.print("Introdueix el desscompte (%): ");
+        System.out.print("Introdueix el descompte (%): ");
         double descompte = scanner.nextDouble();
 
         double preuFinal = calcularPreuFinal(preuBase, iva, descompte);
