@@ -5,23 +5,20 @@ import java.util.Scanner;
 public class Exercici0004 {
 
     public static int contaMajuscules(String contrasenya) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        String Mayus = ("AEIOUÁÉÍÓÚÀÈÌÒÙÄËÏÖÜ");
+
         return 0;
     }
 
     public static int contaMinuscules(String contrasenya) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        String minus = ("aeiouáéíóúàèìòùäëïöü");
+
         return 0;
     }
 
     public static String validaContrasenya(String contrasenya) {
         
         Integer length = contrasenya.length();
-        
        
         if (length < 8){
             System.out.println("La contrasenya és vàlida");
@@ -37,6 +34,7 @@ public class Exercici0004 {
         
         System.out.print("Escriu una contrasenya: ");
         String contrasenya = scanner.nextLine();
+        
 
         scanner.close();
     }
