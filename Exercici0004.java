@@ -13,7 +13,7 @@ public class Exercici0004 {
             }
         }
 
-        return 0;
+        return cont;
     }
 
     public static int contaMinuscules(String contrasenya) {
@@ -23,7 +23,7 @@ public class Exercici0004 {
                 cont ++;
             }
         }
-        return 0;
+        return cont;
     }
 
     public static String validaContrasenya(String contrasenya) {
