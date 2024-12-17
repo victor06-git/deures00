@@ -17,7 +17,7 @@ public class Exercici0004 {
     }
 
     public static int contaMinuscules(String contrasenya) {
-        int count = 0;
+        int cont = 0;
         for (char mi : contrasenya.toCharArray()) {
             if (Character.isLowerCase(mi)){
                 cont ++;
@@ -31,12 +31,10 @@ public class Exercici0004 {
         Integer length = contrasenya.length();
        
         if (length >= 8 && contaMajuscules(contrasenya) >= 2 && contaMinuscules(contrasenya) >= 2){
-            System.out.println("La contrasenya és vàlida");
+            return  "La contrasenya és vàlida";
         } else {
-            System.out.println("La contrasenya NO és vàlida");
+            return "La contrasenya NO és vàlida";
         }
-
-        return "";
     }
 
     public static void main(String[] args) {
@@ -45,9 +43,10 @@ public class Exercici0004 {
         System.out.print("Escriu una contrasenya: ");
         String contrasenya = scanner.nextLine();
 
-        validaContrasenya(contrasenya);
-        
+        String resultat = validaContrasenya(contrasenya);
 
+        System.out.printf("La contrasenya '%s' : %s\n", contrasenya, resultat);
+        
         scanner.close();
     }
 }
