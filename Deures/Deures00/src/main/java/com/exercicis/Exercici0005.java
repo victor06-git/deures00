@@ -7,7 +7,7 @@ public class Exercici0005 {
         String newtext = text.toLowerCase().replace(" ", "").replace("·", "").replace("'", ""); //Treu tots els espais i ajuntar tots els caràcters amb un sol string
         
         for(char c: newtext.toCharArray()){
-            //Crear string a partir de array
+            //Crear string a partir de array invertido para palindrom
             String inverted = "Hola";
         }
         String inverted = "Hola";
