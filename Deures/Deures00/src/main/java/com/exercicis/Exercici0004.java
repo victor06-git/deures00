@@ -28,9 +28,9 @@ public class Exercici0004 {
 
     public static String validaContrasenya(String contrasenya) {
         
-        //Integer length = contrasenya.length();
+        Integer length = contrasenya.length();
        
-        if (contrasenya.length() >= 8 && contaMajuscules(contrasenya) >= 2 && contaMinuscules(contrasenya) >= 2){
+        if (length >= 8 && contaMajuscules(contrasenya) >= 2 && contaMinuscules(contrasenya) >= 2){
             return  "La contrasenya és vàlida";
         } else {
             return "La contrasenya NO és vàlida";
@@ -40,12 +40,12 @@ public class Exercici0004 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Escriu una contrasenya: ");
+        System.out.print("Escriu una contrasenya: "); //Print on l'usuari escriu la contrasenya
         String contrasenya = scanner.nextLine();
 
         String resultat = validaContrasenya(contrasenya);
 
-        System.out.printf("La contrasenya '%s' : %s\n", contrasenya, resultat);
+        System.out.printf("La contrasenya '%s': %s\n", contrasenya, resultat);
         
         scanner.close();
     }
