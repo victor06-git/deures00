@@ -7,8 +7,17 @@ public class Exercici0005 {
         String newtext = text.toLowerCase().replace(" ", "").replace("·", "").replace("'", ""); //Treu tots els espais i ajuntar tots els caràcters amb un sol string
         
         for(char c: newtext.toCharArray()){
-
+            //Crear string a partir de array
+            String inverted = "Hola";
         }
+        String inverted = "Hola";
+       
+        if (newtext = inverted){
+            System.out.println("Hola");
+        } else {
+            System.out.println("False ");
+        }
+
         return false;
     }
 
