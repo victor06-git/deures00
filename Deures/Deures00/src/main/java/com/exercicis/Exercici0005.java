@@ -11,11 +11,11 @@ public class Exercici0005 {
             String inverted = "Hola";
         }
         String inverted = "Hola";
-       
+        
         if (newtext = inverted){
-            System.out.println("Hola");
+            System.out.println("True");
         } else {
-            System.out.println("False ");
+            System.out.println("False");
         }
 
         return false;
