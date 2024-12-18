@@ -26,9 +26,12 @@ public class Exercici0006 {
 
     public static void main(String[] args) {
         
-        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 1 (2 adults, 2 nens, 1 gran):", calculaEntrada(numeroAdults:2, numNens:2, numGrans:1, dia:"dimarts")));
-        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 2 (1 adult, 2 nens, 0 grans):", calculaEntrada(numeroAdults:1, numNens:2, numGrans:0, dia:"dijous")));
-        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 3 (0 adults, 0 nens, 2 grans):", calculaEntrada(numeroAdults:0, numNens:0, numGrans:2, dia:"dissabte")));
-        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 4 (1 adult, 0 nens, 0 grans):", calculaEntrada(numeroAdults:1, numNens:0, numGrans:0, dia:"diumenge")));
+        System.out.println(String.format(Locale.US, "%-35s%.2f€", "Cas 1 (2 adults, 2 nens, 1 gran):", calculaEntrada(2,2,1,"dimarts")));
+        System.out.println(String.format(Locale.US, "%-35s%.2f€", "Cas 2 (1 adult, 2 nens, 0 grans):", calculaEntrada(1, 2, 0, "dijous")));
+        System.out.println(String.format(Locale.US, "%-35s%.2f€", "Cas 3 (0 adults, 0 nens, 2 grans):", calculaEntrada(0, 0, 2, "dissabte")));
+        System.out.println(String.format(Locale.US, "%-35s%.2f€", "Cas 4 (1 adult, 0 nens, 0 grans):", calculaEntrada(1, 0, 0, "diumenge")));
+        System.out.println(String.format(Locale.US, "%-35s%.2f€", "Cas 5 (1 adults, 3 nens, 4 gran):", calculaEntrada(1, 3, 4, "dijous")));
+        System.out.println(String.format(Locale.US, "%-35s%.2f€", "Cas 6 (2 adults, 2 nens, 1 gran):", calculaEntrada(2, 2, 1, "diumenge")));
     }
 }
+ 
