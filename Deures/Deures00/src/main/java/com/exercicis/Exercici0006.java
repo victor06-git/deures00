@@ -16,19 +16,19 @@ public class Exercici0006 {
             entradaTotal = entradaTotal - (entradaTotal * 0.2);
         }
 
-        if(dia.equalsIgnoreCase("dijous") && numNens > 0){
-            if(numeroAdults >= 1){
-                entradaTotal -= entradaNens * 0.5  //Paga la meitat del preu del nen
+        if(dia.equalsIgnoreCase("dijous") && numNens > 0 && numeroAdults >= 1){
+                entradaTotal -= entradaNens * 0.5;  //Paga la meitat del preu del nen
                 entradaTotal -= entradaNens * (numNens - 1); //Paga només un nen
-            
-            }
         }
 
-        return 0;
+        return entradaTotal;
     }
 
     public static void main(String[] args) {
         
-        System.out.printf(LocaleUS, )
+        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 1 (2 adults, 2 nens, 1 gran):", calculaEntrada(numeroAdults:2, numNens:2, numGrans:1, dia:"dimarts")));
+        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 2 (1 adult, 2 nens, 0 grans):", calculaEntrada(numeroAdults:1, numNens:2, numGrans:0, dia:"dijous")));
+        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 3 (0 adults, 0 nens, 2 grans):", calculaEntrada(numeroAdults:0, numNens:0, numGrans:2, dia:"dissabte")));
+        System.out.println(String.format(Locale.US, "%-25s%.2f€", "Cas 4 (1 adult, 0 nens, 0 grans):", calculaEntrada(numeroAdults:1, numNens:0, numGrans:0, dia:"diumenge")));
     }
 }
