@@ -23,7 +23,7 @@ public class Exercici0005 {
    
     public static void main(String[] args) {
         
-        String[] frases ={
+        String[] frases = {
             "Anul·la la lluna",
             "Atrapa la lluna",
             "Atrapa'l o l'aparta",
@@ -36,9 +36,17 @@ public class Exercici0005 {
             "Nu pop un"
         };
 
+       
+       
         for (String f: frases) {
             boolean esPalindrom = isPalindrom(f);
-            System.out.println(f + " (" + (esPalindrom ? "Si" : "No") + ")"); //Print de las frases + si són Palindrom
+            if (esPalindrom){
+                String palindrom = "Si";
+                System.out.println(f + " (" + palindrom + ")");
+            } else {
+                String palindrom = "No";
+                System.out.println(f + " (" + palindrom + ")");
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ public class Exercici0002 {
         String eurosStr = scanner.nextLine();
         double euros = Double.parseDouble(eurosStr.replace(',', '.'));
 
-        System.out.print("Escriu la tasa de conversió (ex: 1.5): ");
+        System.out.print("Escriu la tasa de conversió (ex: 1.25): ");
         String tasaStr = scanner.nextLine();
         double conversio = Double.parseDouble(tasaStr.replace(',' , '.'));
 
