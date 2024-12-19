@@ -38,14 +38,25 @@ public class Exercici0007 {
         double preuMàgia = 250.0;
         double preuMúsica = 500.0;
 
-        
-        return 0.0;
+        double preuEntreteniment = 0.0;
+
+        if (tipusEntreteniment.equalsIgnoreCase("Màgia")){
+            preuEntreteniment = preuMàgia;
+        } else if (tipusEntreteniment.equalsIgnoreCase("Música en directe")){
+            preuEntreteniment = preuMúsica;
+        } else {
+            preuEntreteniment = 0.0;
+        }
+        return preuEntreteniment;
     }
 
     public static double calculaFesta(String tipusLloc, String tipusMenjar, String tipusEntreteniment, int numConvidats) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        calculaCostEntreteniment(tipusEntreteniment);
+        calculaCostLloc(tipusLloc);
+        calculaCostMenjar(tipusMenjar, numConvidats);
+
+        
+
         return 0.0;
     }
 
