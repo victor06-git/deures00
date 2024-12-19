@@ -11,9 +11,15 @@ public class Exercici0007 {
 
         double preuLloc = 0.0;
 
-        switch (tipusLloc.equalsIgnoreCase()) {
-            case :
-                
+        switch (tipusLloc.toLowerCase()) {
+            case "sala estàndard":
+                preuLloc = preuEstàndard;
+                break;
+            case "jardí amb piscina":
+                preuLloc = preuPiscina;
+                break;
+            case "saló gran amb escenari":
+                preuLloc = preuEscenari;
                 break;
             default:
                 throw new AssertionError();
