@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exercicis.TestExercici0009" time="0.071" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exercicis.TestExercici0011" time="0.071" tests="4" errors="1" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,9 +12,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-23.0.1-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219170446943_3.jar /home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire 2024-12-19T17-04-46_868-jvmRun1 surefire-20241219170446943_1tmp surefire_0-20241219170446943_2tmp"/>
+    <property name="sun.java.command" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219182329298_3.jar /home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire 2024-12-19T18-23-29_193-jvmRun1 surefire-20241219182329298_1tmp surefire_0-20241219182329298_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.exercicis.TestExercici0009"/>
+    <property name="test" value="com.exercicis.TestExercici0011"/>
     <property name="surefire.test.class.path" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/test-classes:/home/super/Documents/GitHub/deures00/Deures/Deures00/target/classes:/home/super/.m2/repository/org/openjfx/javafx-controls/20/javafx-controls-20.jar:/home/super/.m2/repository/org/openjfx/javafx-controls/20/javafx-controls-20-linux.jar:/home/super/.m2/repository/org/openjfx/javafx-fxml/20/javafx-fxml-20.jar:/home/super/.m2/repository/org/openjfx/javafx-fxml/20/javafx-fxml-20-linux.jar:/home/super/.m2/repository/org/openjfx/javafx-base/20/javafx-base-20.jar:/home/super/.m2/repository/org/openjfx/javafx-base/20/javafx-base-20-linux.jar:/home/super/.m2/repository/org/openjfx/javafx-graphics/20/javafx-graphics-20.jar:/home/super/.m2/repository/org/openjfx/javafx-graphics/20/javafx-graphics-20-linux.jar:/home/super/.m2/repository/org/java-websocket/Java-WebSocket/1.5.3/Java-WebSocket-1.5.3.jar:/home/super/.m2/repository/org/json/json/20240303/json-20240303.jar:/home/super/.m2/repository/org/xerial/sqlite-jdbc/3.47.0.0/sqlite-jdbc-3.47.0.0.jar:/home/super/.m2/repository/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar:/home/super/.m2/repository/org/slf4j/slf4j-simple/2.0.3/slf4j-simple-2.0.3.jar:/home/super/.m2/repository/org/jline/jline/3.21.0/jline-3.21.0.jar:/home/super/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/super/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/super/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/super/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/super/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/super/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/super/.m2/repository/com/github/stefanbirkner/system-lambda/1.2.1/system-lambda-1.2.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/super"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219170446943_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219182329298_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
     <property name="user.name" value="super"/>
@@ -54,6 +54,27 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testMainFunction" classname="com.exercicis.TestExercici0009" time="0.045"/>
-  <testcase name="testDibuixarRectangle" classname="com.exercicis.TestExercici0009" time="0.003"/>
+  <testcase name="testNomsCompostos" classname="com.exercicis.TestExercici0011" time="0.027"/>
+  <testcase name="testEscullNomsAleatoris" classname="com.exercicis.TestExercici0011" time="0.007">
+    <failure message="El nombre d&apos;elements seleccionats hauria de ser 5. ==&gt; expected: &lt;5&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: El nombre d'elements seleccionats hauria de ser 5. ==> expected: <5> but was: <0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at com.exercicis.TestExercici0011.testEscullNomsAleatoris(TestExercici0011.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></failure>
+  </testcase>
+  <testcase name="testMainFunction" classname="com.exercicis.TestExercici0011" time="0.004">
+    <error message="Index 3 out of bounds for length 3" type="java.lang.ArrayIndexOutOfBoundsException"><![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.exercicis.TestExercici0011.testMainFunction(TestExercici0011.java:84)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></error>
+  </testcase>
+  <testcase name="testNomsAcabenVocal" classname="com.exercicis.TestExercici0011" time="0.001"/>
 </testsuite>

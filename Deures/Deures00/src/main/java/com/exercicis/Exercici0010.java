@@ -48,11 +48,11 @@ public class Exercici0010 {
         ArrayList<Integer> multilist = multiplicarPerDos(randomList);
         System.out.println("Llista multiplicada per 2: " + multilist);
 
-        ArrayList<Integer> imparlist = filtrarImparells(multilist);
+        ArrayList<Integer> imparlist = filtrarImparells(randomList);
         System.out.println("Llista només amb números imparells: " + imparlist);
 
-        ArrayList<Double> divlist = dividirPerDos(multilist);
+        ArrayList<Double> divlist = dividirPerDos(imparlist);
         System.out.println("Llista imparells dividits per 2: " + divlist);
-        
+
     }   
 }

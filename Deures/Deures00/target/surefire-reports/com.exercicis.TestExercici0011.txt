@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: com.exercicis.TestExercici0011
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.071 s <<< FAILURE! -- in com.exercicis.TestExercici0011
+com.exercicis.TestExercici0011.testEscullNomsAleatoris -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: El nombre d'elements seleccionats hauria de ser 5. ==> expected: <5> but was: <0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at com.exercicis.TestExercici0011.testEscullNomsAleatoris(TestExercici0011.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+com.exercicis.TestExercici0011.testMainFunction -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.exercicis.TestExercici0011.testMainFunction(TestExercici0011.java:84)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
