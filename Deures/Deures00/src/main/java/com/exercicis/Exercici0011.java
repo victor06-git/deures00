@@ -22,6 +22,7 @@ public class Exercici0011 {
             int index = random.nextInt(copiaNoms.size());
             randomlist.add(copiaNoms.remove(index));
         }
+
         return randomlist;
     }
    
@@ -58,6 +59,9 @@ public class Exercici0011 {
         ArrayList<String> llistaAleatoris = escullNomsAleatoris(noms, 5);
         System.out.println("Noms escollits a l'atzar: " + llistaAleatoris);
 
+        
+
+        
         ArrayList<String> acabenVocal = nomsAcabenVocal(noms);
         System.out.println("Noms que acaben amb vocal: " + acabenVocal);
 
