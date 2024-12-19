@@ -1,14 +1,22 @@
 package com.exercicis;
 
-import java.util.Locale;
-
 public class Exercici0007 {
 
     public static double calculaCostLloc(String tipusLloc) {
-        /*
-            TODO: Resol aquí la funció
-        */
-        return 0.0;
+        double preuEstàndard = 100.0;
+        double preuPiscina = 200.0;
+        double preuEscenari = 500.0;
+
+        double preuLloc = 0;
+
+        if (tipusLloc.equalsIgnoreCase("Sala Estàndard")){
+            preuLloc = preuEstàndard;
+        } else if (tipusLloc.equalsIgnoreCase("Jardí amb piscina")) {
+            preuLloc = preuPiscina;
+        } else {
+            preuLloc = preuEscenari;
+        }
+        return preuLloc;
     }
 
     public static double calculaCostMenjar(String tipusMenjar, int numConvidats) {
