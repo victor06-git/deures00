@@ -12,27 +12,11 @@ public class Exercici0007 {
         double preuLloc = 0.0;
 
         switch (tipusLloc.toLowerCase()) {
-            case "sala estàndard":
-                preuLloc = preuEstàndard;
-                break;
-            case "jardí amb piscina":
-                preuLloc = preuPiscina;
-                break;
-            case "saló gran amb escenari":
-                preuLloc = preuEscenari;
-                break;
-            default:
-                throw new AssertionError();
+            case "sala estàndard" -> preuLloc = preuEstàndard;
+            case "jardí amb piscina" -> preuLloc = preuPiscina;
+            case "saló gran amb escenari" -> preuLloc = preuEscenari;
+            default -> throw new IllegalArgumentException("Lloc desconegut: " + tipusLloc);
         }
-
-        if (tipusLloc.equalsIgnoreCase("Sala Estàndard")){
-            preuLloc = preuEstàndard;
-        } else if (tipusLloc.equalsIgnoreCase("Jardí amb piscina")) {
-            preuLloc = preuPiscina;
-        } else {
-            preuLloc = preuEscenari;
-        }
-       
         return preuLloc;
     }
 
@@ -42,28 +26,29 @@ public class Exercici0007 {
 
         double preuMenjar = 0.0;
 
-        if (tipusMenjar.equalsIgnoreCase(" Menú Bàsic")) {
-            preuMenjar = (preuBàsic * numConvidats);
-        } else {
-            preuMenjar = (preuPremium * numConvidats);
+        switch (tipusMenjar.toLowerCase()) {
+            case "menú bàsic" -> preuMenjar = preuBàsic;
+            case "menú premium" -> preuMenjar = preuPremium;
+            default -> throw new IllegalArgumentException("Menú desconegut: " + tipusMenjar);
         }
-        return preuMenjar;
+        double preuMenjarTotal = (numConvidats > 50) ? (preuMenjar * numConvidats) * 0.95 : preuMenjar * numConvidats;
+        
+        return preuMenjarTotal;
     }
 
     public static double calculaCostEntreteniment(String tipusEntreteniment) {
+        
         double preuMàgia = 250.0;
         double preuMúsica = 500.0;
 
         double preuEntreteniment = 0.0;
 
-        if (tipusEntreteniment.equalsIgnoreCase("Màgia")){
-            preuEntreteniment = preuMàgia;
-        } else if (tipusEntreteniment.equalsIgnoreCase("Música en directe")){
-            preuEntreteniment = preuMúsica;
-        } else {
-            preuEntreteniment = 0.0;
-        }
-        
+        switch (tipusEntreteniment.toLowerCase()) {
+            case "màgia" -> preuEntreteniment = preuMàgia;
+            case "música en directe" -> preuEntreteniment = preuMúsica;
+            case "cap" -> preuEntreteniment = 0.0;
+            default -> throw new IllegalArgumentException("Entreteniment desconegut: " + tipusEntreteniment);
+        }        
         return preuEntreteniment;
     }
 
@@ -75,10 +60,6 @@ public class Exercici0007 {
         if (tipusLloc.equalsIgnoreCase("Saló gran amb escenari") && 
             tipusEntreteniment.equalsIgnoreCase("Música en directe")){
             preuEntreteniment = (preuEntreteniment - 100);
-        }
-
-        if (numConvidats > 50) {
-            preuMenjar = (preuMenjar * 0.95);
         }
 
         double preuTotal = preuEntreteniment + preuMenjar + preuLloc;
