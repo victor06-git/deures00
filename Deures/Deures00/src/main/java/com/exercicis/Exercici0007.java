@@ -49,6 +49,7 @@ public class Exercici0007 {
         } else {
             preuEntreteniment = 0.0;
         }
+        
         return preuEntreteniment;
     }
 
