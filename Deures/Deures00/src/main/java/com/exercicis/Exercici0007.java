@@ -7,7 +7,7 @@ public class Exercici0007 {
         double preuPiscina = 200.0;
         double preuEscenari = 500.0;
 
-        double preuLloc = 0;
+        double preuLloc = 0.0;
 
         if (tipusLloc.equalsIgnoreCase("Sala Estàndard")){
             preuLloc = preuEstàndard;
@@ -16,20 +16,29 @@ public class Exercici0007 {
         } else {
             preuLloc = preuEscenari;
         }
+       
         return preuLloc;
     }
 
     public static double calculaCostMenjar(String tipusMenjar, int numConvidats) {
-        /*
-            TODO: Resol aquí la funció
-        */
-        return 0.0;
+        double preuBàsic = 15.0;
+        double preuPremium = 30.0;
+
+        double preuMenjar = 0.0;
+
+        if (tipusMenjar.equalsIgnoreCase(" Menú Bàsic")) {
+            preuMenjar = (preuBàsic * numConvidats);
+        } else {
+            preuMenjar = (preuPremium * numConvidats);
+        }
+        return preuMenjar;
     }
 
     public static double calculaCostEntreteniment(String tipusEntreteniment) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        double preuMàgia = 250.0;
+        double preuMúsica = 500.0;
+
+        
         return 0.0;
     }
 
