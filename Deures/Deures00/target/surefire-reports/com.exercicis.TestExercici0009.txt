@@ -1,22 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.exercicis.TestExercici0009
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! -- in com.exercicis.TestExercici0009
-com.exercicis.TestExercici0009.testMainFunction -- Time elapsed: 0.053 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
->>>>>>>>>> Diff found >>>>>>>>>>
-First difference at position 66.
-Received: Introdueix l'ample del rectangle: Introdueix l'alt del rectangle: \n<difference>
-Expected: Introdueix l'ample del rectangle: Introdueix l'alt del rectangle: Resultat:
-<<<<<<<<<< Diff end <<<<<<<<<<
- ==> expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
-	at com.exercicis.TestExercici0009.testMainFunction(TestExercici0009.java:72)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s -- in com.exercicis.TestExercici0009

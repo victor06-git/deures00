@@ -26,7 +26,7 @@ public class Exercici0009 {
         System.out.print("Introdueix l'ample del rectangle: ");
         int ample = scanner.nextInt();
 
-        System.out.println("Introdueix l'alt del rectangle: ");
+        System.out.print("Introdueix l'alt del rectangle: ");
         int alt = scanner.nextInt();
 
         System.out.println("Resultat:");
