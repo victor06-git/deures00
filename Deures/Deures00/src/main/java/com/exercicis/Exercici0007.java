@@ -11,6 +11,14 @@ public class Exercici0007 {
 
         double preuLloc = 0.0;
 
+        switch (tipusLloc.equalsIgnoreCase()) {
+            case :
+                
+                break;
+            default:
+                throw new AssertionError();
+        }
+
         if (tipusLloc.equalsIgnoreCase("Sala Estàndard")){
             preuLloc = preuEstàndard;
         } else if (tipusLloc.equalsIgnoreCase("Jardí amb piscina")) {
@@ -63,7 +71,7 @@ public class Exercici0007 {
             preuEntreteniment = (preuEntreteniment - 100);
         }
 
-        if (numConvidats >= 50) {
+        if (numConvidats > 50) {
             preuMenjar = (preuMenjar * 0.95);
         }
 
@@ -73,10 +81,18 @@ public class Exercici0007 {
     }
 
     public static void main(String[] args) {
-        double preuTotal_1 = calculaFesta("sala estàndard", "menú bàsic", "cap", 20);
-        double preuTotal_2 = calculaFesta("Saló gran amb escenari", "menú premium", "música en directe", 70);
+        double preuTotal_1 = calculaFesta("Sala Estàndard", "Menú Bàsic", "cap", 20);
+        double preuTotal_2 = calculaFesta("jardí amb piscina", "menú premium", "màgia", 60);
+        double preuTotal_3 = calculaFesta("jardí amb piscina", "menú bàsic", "música en directe", 40);
+        double preuTotal_4 = calculaFesta("saló gran amb escenari", "menú premium", "música en directe", 70);
+        double preuTotal_5 = calculaFesta("sala estàndard", "menú premium", "màgia", 15);
         
 
         System.out.println(String.format(Locale.US, "%-75s%.2f€", "Cas 1 (\"sala estàndard\", \"menú bàsic\", \"cap\", 20): ", preuTotal_1));
+        System.out.println(String.format(Locale.US, "%-75s%.2f€", "Cas 2 (\"jardí amb piscina\", \"menú premium\", \"màgia\", 60): ", preuTotal_2));
+        System.out.println(String.format(Locale.US, "%-75s%.2f€", "Cas 3 (\"jardí amb piscina\", \"menú bàsic\", \"música en directe\", 40): ", preuTotal_3));
+        System.out.println(String.format(Locale.US, "%-75s%.2f€", "Cas 4 (\"saló gran amb escenari\", \"menú premium\", \"música en directe\", 70): ", preuTotal_4));
+        System.out.println(String.format(Locale.US, "%-75s%.2f€", "Cas 5 (\"sala estàndard\", \"menú premium\", \"màgia\", 15): ", preuTotal_5));
+        
     }
 }
