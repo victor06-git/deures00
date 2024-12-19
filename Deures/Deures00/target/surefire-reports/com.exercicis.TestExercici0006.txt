@@ -1,16 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.exercicis.TestExercici0006
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.087 s <<< FAILURE! -- in com.exercicis.TestExercici0006
-com.exercicis.TestExercici0006.testMainFunction -- Time elapsed: 0.026 s <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.184 s <<< FAILURE! -- in com.exercicis.TestExercici0006
+com.exercicis.TestExercici0006.testMainFunction -- Time elapsed: 0.039 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 >>>>>>>>>> Diff found >>>>>>>>>>
-Matching text:
-Cas 1 (2 adults, 2 nens, 1 gran):  28.80€
-
-First difference at position 58.
-Received: Cas 2 (1 adult, 2<difference>
-Expected: Cas 2 (1 adult,  2 nens, 0 grans): 12.50€
+First difference at position 41.
+Received: Cas 1 (2 adults, 2 nens, 1 gran):  28.80€<difference>
+Expected: Cas 1 (2 adults, 2 nens, 1 gran):  28.80€
 
 <<<<<<<<<< Diff end <<<<<<<<<< ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
