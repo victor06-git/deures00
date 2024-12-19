@@ -1,5 +1,7 @@
 package com.exercicis;
 
+import java.util.Locale;
+
 public class Exercici0007 {
 
     public static double calculaCostLloc(String tipusLloc) {
@@ -51,18 +53,29 @@ public class Exercici0007 {
     }
 
     public static double calculaFesta(String tipusLloc, String tipusMenjar, String tipusEntreteniment, int numConvidats) {
-        calculaCostEntreteniment(tipusEntreteniment);
-        calculaCostLloc(tipusLloc);
-        calculaCostMenjar(tipusMenjar, numConvidats);
+        double preuEntreteniment = calculaCostEntreteniment(tipusEntreteniment);
+        double preuLloc = calculaCostLloc(tipusLloc);
+        double preuMenjar = calculaCostMenjar(tipusMenjar, numConvidats);
 
-        
+        if (tipusLloc.equalsIgnoreCase("Saló gran amb escenari") && 
+            tipusEntreteniment.equalsIgnoreCase("Música en directe")){
+            preuEntreteniment = (preuEntreteniment - 100);
+        }
 
-        return 0.0;
+        if (numConvidats >= 50) {
+            preuMenjar = (preuMenjar * 0.95);
+        }
+
+        double preuTotal = preuEntreteniment + preuMenjar + preuLloc;
+
+        return preuTotal;
     }
 
     public static void main(String[] args) {
-        /*
-            TODO: Resol aquí l'exercici
-        */
+        double preuTotal_1 = calculaFesta("sala estàndard", "menú bàsic", "cap", 20);
+        double preuTotal_2 = calculaFesta("Saló gran amb escenari", "menú premium", "música en directe", 70);
+        
+
+        System.out.println(String.format(Locale.US, "%-75s%.2f€", "Cas 1 (\"sala estàndard\", \"menú bàsic\", \"cap\", 20): ", preuTotal_1));
     }
 }
