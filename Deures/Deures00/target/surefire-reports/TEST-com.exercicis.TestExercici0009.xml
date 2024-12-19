@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exercicis.TestExercici0008" time="0.075" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.exercicis.TestExercici0009" time="0.115" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,9 +12,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-23.0.1-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219162322048_3.jar /home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire 2024-12-19T16-23-21_977-jvmRun1 surefire-20241219162322048_1tmp surefire_0-20241219162322048_2tmp"/>
+    <property name="sun.java.command" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219164856453_3.jar /home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire 2024-12-19T16-48-56_329-jvmRun1 surefire-20241219164856453_1tmp surefire_0-20241219164856453_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.exercicis.TestExercici0008"/>
+    <property name="test" value="com.exercicis.TestExercici0009"/>
     <property name="surefire.test.class.path" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/test-classes:/home/super/Documents/GitHub/deures00/Deures/Deures00/target/classes:/home/super/.m2/repository/org/openjfx/javafx-controls/20/javafx-controls-20.jar:/home/super/.m2/repository/org/openjfx/javafx-controls/20/javafx-controls-20-linux.jar:/home/super/.m2/repository/org/openjfx/javafx-fxml/20/javafx-fxml-20.jar:/home/super/.m2/repository/org/openjfx/javafx-fxml/20/javafx-fxml-20-linux.jar:/home/super/.m2/repository/org/openjfx/javafx-base/20/javafx-base-20.jar:/home/super/.m2/repository/org/openjfx/javafx-base/20/javafx-base-20-linux.jar:/home/super/.m2/repository/org/openjfx/javafx-graphics/20/javafx-graphics-20.jar:/home/super/.m2/repository/org/openjfx/javafx-graphics/20/javafx-graphics-20-linux.jar:/home/super/.m2/repository/org/java-websocket/Java-WebSocket/1.5.3/Java-WebSocket-1.5.3.jar:/home/super/.m2/repository/org/json/json/20240303/json-20240303.jar:/home/super/.m2/repository/org/xerial/sqlite-jdbc/3.47.0.0/sqlite-jdbc-3.47.0.0.jar:/home/super/.m2/repository/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar:/home/super/.m2/repository/org/slf4j/slf4j-simple/2.0.3/slf4j-simple-2.0.3.jar:/home/super/.m2/repository/org/jline/jline/3.21.0/jline-3.21.0.jar:/home/super/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/super/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/super/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/super/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/super/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/super/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/super/.m2/repository/com/github/stefanbirkner/system-lambda/1.2.1/system-lambda-1.2.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/super"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219162322048_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/super/Documents/GitHub/deures00/Deures/Deures00/target/surefire/surefirebooter-20241219164856453_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
     <property name="user.name" value="super"/>
@@ -54,6 +54,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testGeneraImparells" classname="com.exercicis.TestExercici0008" time="0.028"/>
-  <testcase name="testMainFunction" classname="com.exercicis.TestExercici0008" time="0.021"/>
+  <testcase name="testMainFunction" classname="com.exercicis.TestExercici0009" time="0.076">
+    <failure message="&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Diff found &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&#10;First difference at position 66.&#10;Received: Introdueix l&apos;ample del rectangle: Introdueix l&apos;alt del rectangle: \n&lt;difference&gt;&#10;Expected: Introdueix l&apos;ample del rectangle: Introdueix l&apos;alt del rectangle: Resultat:&#10;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Diff end &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&#10; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+>>>>>>>>>> Diff found >>>>>>>>>>
+First difference at position 66.
+Received: Introdueix l'ample del rectangle: Introdueix l'alt del rectangle: \n<difference>
+Expected: Introdueix l'ample del rectangle: Introdueix l'alt del rectangle: Resultat:
+<<<<<<<<<< Diff end <<<<<<<<<<
+ ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.exercicis.TestExercici0009.testMainFunction(TestExercici0009.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></failure>
+  </testcase>
+  <testcase name="testDibuixarRectangle" classname="com.exercicis.TestExercici0009" time="0.005"/>
 </testsuite>
