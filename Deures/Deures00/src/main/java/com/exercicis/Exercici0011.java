@@ -16,7 +16,7 @@ public class Exercici0011 {
         ArrayList<String> randomlist = new ArrayList<>(); //Primera llista
         Random random = new Random(); //Nou random
         
-        ArrayList<String> copiaNoms = new ArrayList<>(); //Segona llista
+        ArrayList<String> copiaNoms = new ArrayList<>(noms); //Segona llista
         for (int i = 0; i < quantitat; i++) {
             if (copiaNoms.isEmpty()) break;
             int index = random.nextInt(copiaNoms.size());
@@ -56,9 +56,15 @@ public class Exercici0011 {
         ArrayList<String> noms = new ArrayList<>(Arrays.asList(
             "Mario", "Princess Peach", "Wario", "Luigi", "Iggy Koopa", "Toad", "Yoshi", "Donkey Kong", "Birdo"
         ));
-        ArrayList<String> llistaAleatoris = escullNomsAleatoris(noms, 5);
-        System.out.println("Noms escollits a l'atzar: " + llistaAleatoris);
+        ArrayList<String> nomsAleatoris = escullNomsAleatoris(noms, 5);
+        System.out.println("Noms escollits a l'atzar: " + nomsAleatoris);
 
+        try {
+            ArrayList<String> error = escullNomsAleatoris(noms, 25);
+            System.out.println("Noms escollits: " + error);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
         
 
         
