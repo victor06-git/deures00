@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.exercicis.TestExercici0011
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.080 s <<< FAILURE! -- in com.exercicis.TestExercici0011
-com.exercicis.TestExercici0011.testMainFunction -- Time elapsed: 0.015 s <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.205 s <<< FAILURE! -- in com.exercicis.TestExercici0011
+com.exercicis.TestExercici0011.testMainFunction -- Time elapsed: 0.043 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 >>>>>>>>>> Diff found >>>>>>>>>>
-First difference at position 65.
-Received: Noms escollits a l'atzar: [Wario, Luigi, Mario, Iggy Koopa, Toad]<difference>
-Expected: Noms escollits a l'atzar: [Wario, Luigi, Mario, Iggy Koopa, Toad]
+First difference at position 69.
+Received: Noms escollits a l'atzar: [Princess Peach, Toad, Yoshi, Birdo, Wario]<difference>
+Expected: Noms escollits a l'atzar: [Princess Peach, Toad, Yoshi, Birdo, Wario]
 <<<<<<<<<< Diff end <<<<<<<<<<
  ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
