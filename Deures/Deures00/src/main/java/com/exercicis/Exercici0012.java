@@ -20,12 +20,14 @@ public class Exercici0012 {
             System.out.println("Name: " + wonder.get("name"));
             System.out.println("Location: " + wonder.get("location"));
             System.out.println("Age: " + wonder.get("age"));
+    
+        }
     }
 
     public static ArrayList<HashMap<String, Object>> sortWondersByName(ArrayList<HashMap<String, Object>> wonders) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        
+        
+
         return new ArrayList<>();
     }
   
