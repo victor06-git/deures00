@@ -1,20 +1,25 @@
 package com.exercicis;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Exercici0012 {
 
     public static HashMap<String, Object> createWonder(String name, String location, int age) {
-        /*
-            TODO: Resol aquí la funció
-        */
-        return new HashMap<>();
+        
+        HashMap<String, Object> wonder = new HashMap<>();
+        wonder.put("name", name);
+        wonder.put("location", location);
+        wonder.put("age", age);
+        
+        return wonder;
     }
 
     public static void showInformation(ArrayList<HashMap<String, Object>> wonders) {
-        /*
-            TODO: Resol aquí la funció
-        */
+        for (HashMap<String, Object> wonder : wonders) {
+            System.out.println("Name: " + wonder.get("name"));
+            System.out.println("Location: " + wonder.get("location"));
+            System.out.println("Age: " + wonder.get("age"));
     }
 
     public static ArrayList<HashMap<String, Object>> sortWondersByName(ArrayList<HashMap<String, Object>> wonders) {
